@@ -1,0 +1,139 @@
+/*.add {
+    width: 70%; 
+    margin-left: max(5vw, 25px);    
+    margin-top: 50px;    
+    color: #6d6d6d;   
+    font-size: 16px;  
+}   
+.add form {   
+    gap: 20px;    
+}  
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    font-size: 20px;
+}
+
+.upload-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.add-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.add-img-upload img {   
+    width: 140px;   
+}
+.add-product-name, .add-product-description {
+    width: max(40%, 280px);    
+}    
+.add-product-name input, .add-product-description textarea {   
+    padding: 10px;   
+}   
+.add-category-price {   
+    display: flex;    
+    gap: 30px;
+}    
+.add-category-price select, .add-category-price input {
+    max-width: 120px;
+    padding: 10px;   
+}   
+.add-btn { 
+    max-width: 120px;    
+    border: none;   
+    padding: 10px;   
+    background-color: black;  
+    color: white;  
+    cursor: pointer;
+}
+*/
+
+
+.add {
+    width: 70%; 
+    margin-left: max(5vw, 25px);    
+    margin-top: 50px;    
+    color: #6d6d6d;   
+    font-size: 16px;  
+}   
+
+.add form {   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align everything to the left */
+    gap: 20px;    
+}  
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Moves text and image to the left */
+    font-size: 20px;
+}
+
+.upload-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns image to the left */
+}
+
+.add-img-upload img {   
+    width: 140px;   
+}
+
+/* ✅ Move Product Name & Description to the Left */
+.add-product-name, .add-product-description {
+    width: max(40%, 280px);    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Moves input boxes to the left */
+}    
+
+.add-product-name input, .add-product-description textarea {   
+    width: 100%; /* Ensures it takes full width */
+    padding: 10px;   
+}   
+
+.add-category-price {   
+    display: flex;    
+    gap: 30px;
+}    
+
+.add-category-price select, .add-category-price input {
+    max-width: 120px;
+    padding: 10px;   
+}   
+
+
+/* ✅ Add Animation to Add Button */
+.add-btn { 
+    width: 150px;  /* Increased width */
+    height: 50px;  /* Increased height */
+    border: none;   
+    padding: 12px;  /* Increased padding */
+    background-color: black;  
+    color: white;  
+    font-size: 18px;  /* Slightly larger text */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Button Animation on Hover */
+.add-btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black; /* Slightly thicker border */
+    transform: scale(1.08); /* Slightly bigger zoom effect */
+}
