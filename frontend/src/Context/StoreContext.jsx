@@ -143,7 +143,7 @@ const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([]);
-    const url = "http://localhost:4000";
+    const url = "https://food-delivery-website-lz17.onrender.com";
 
     // ✅ Set item to specific quantity
     const setItemQuantity = (itemId, quantity) => {
