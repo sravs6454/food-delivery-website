@@ -9,7 +9,7 @@ const AdminLogin = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:4000/api/admin/login", {
+            const response = await fetch("https://food-delivery-website-lz17.onrender.com/api/admin/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password }),
@@ -348,8 +348,8 @@ const AdminLogin = ({ isOpen, onClose }) => {
     setErrorMessage("");
 
     // Choose API endpoint based on Login or Sign Up
-    const apiUrl = `http://localhost:4000/api/admin/${
-      currState === "Login" ? "login" : "register"
+    const apiUrl = `https://food-delivery-website-lz17.onrender.com/api/admin/${
+    currState === "Login" ? "login" : "register"
     }`;
 
     try {

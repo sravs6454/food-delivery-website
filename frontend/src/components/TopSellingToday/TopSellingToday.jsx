@@ -269,7 +269,7 @@ const TopSellingToday = () => {
   const { food_list, setItemQuantity } = useContext(StoreContext);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/top-today')
+    axios.get('https://food-delivery-website-lz17.onrender.com/api/top-today')
       .then(res => {
         const updatedItems = res.data.topSellingToday.map(item => ({
           ...item,
@@ -321,7 +321,7 @@ const TopSellingToday = () => {
             topItems.map((item, idx) => (
               <div key={idx} className="top-item-card-horizontal">
                 <div className="image-box">
-                  <img src={`http://localhost:4000/images/${item.image}`} alt={item.name} />
+                  <img src={`https://food-delivery-website-lz17.onrender.com/images/${item.image}`} alt={item.name} />
 
                   {item.quantity === 0 ? (
                     <button className="add-btn" onClick={() => increaseQty(idx)}>+</button>
